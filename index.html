@@ -11,13 +11,14 @@
   <title>Landing Page - Start Bootstrap Theme</title>
 
   <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <!-- Custom fonts for this template -->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.css"
+    integrity="sha512-9Tu/Gu0+bXW+oGrTGJOeNz2RG4MaF52FznXCciXFrXehFTLF6phJnJFNVOU2mmj9FWIXk9ap0H1ocygu1ZTRqg=="
+    crossorigin="anonymous" />
   <!-- Custom styles for this template -->
   <link href="css/landing-page.css" rel="stylesheet">
 
@@ -26,93 +27,108 @@
 <body>
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light static-top">
-    <a class="navbar-brand" href="#">Kopkar Jamsostek</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse">
-      <div class="container">
+  <nav class="navbar navbar-expand-lg navbar-dark scrolling-navbar ">
+    <div class="container">
+      <a class="navbar-brand" href="#">Kopkar Jamsostek</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse">
         <div class="navbar-nav ml-auto">
-          <a class="nav-item nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" href="#">Kontak</a>
-          <a class="nav-item nav-link" href="#">Tentang</a>
-      </div>
-    
+          <a class="nav-item nav-link" href="#">Tentang Kami <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="#">Produk</a>
+          <a class="nav-item nav-link" href="#">Hubungi Kami</a>
+        </div>
+
       </div>
     </div>
   </nav>
 
   <!-- Masthead -->
   <header class="masthead text-white text-center">
-    <div class="overlay"></div>
     <div class="container">
       <div class="row">
         <div class="col-xl-9 mx-auto">
-          <h1 class="mb-5">Selamat Datang Di Koperasi Karyawan Jamsostek</h1>
+          <h1 class=" mb-5">Selamat Datang Di <span> Koperasi Karyawan Jamsostek</span></h1>
         </div>
       </div>
     </div>
   </header>
 
+
+
+
+
+
   <!-- Icons Grid -->
-  <section class="features-icons bg-light text-center">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4">
-          <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-            <div class="features-icons-icon d-flex">
-              <i class="icon-people m-auto text-success"></i>
+  <section class="info-panel">
+  <div class="container">
+    <div class="row justify-content-center ">
+      <div class="col-lg-10 features text-center">
+        <div class="row">
+          <div class="col-lg">
+            <div class="features-item ">
+              <div class="features-item-icon d-flex">
+                <i class="icon-people m-auto text-success"></i>
+              </div>
+              <h3>Anggota Koperasi</h3>
+              <p class="lead mb-0">1000+ Anggota tersebar di seluruh indonesia!</p>
             </div>
-            <h3>Anggota Koperasi</h3>
-            <p class="lead mb-0">1000+ Anggota tersebar di seluruh indonesia!</p>
           </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-            <div class="features-icons-icon d-flex">
-              <i class="icon-layers m-auto text-success"></i>
+          <div class="col-lg">
+            <div class="features-item ">
+              <div class="features-item-icon d-flex">
+                <i class="icon-layers m-auto text-success"></i>
+              </div>
+              <h3>Proses Cepat</h3>
+              <p class="lead mb-0">Pinjaman cair hanya dalam 5 hari kerja</p>
             </div>
-            <h3>Proses Cepat</h3>
-            <p class="lead mb-0">Pinjaman cair hanya dalam 5 hari kerja</p>
           </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="features-icons-item mx-auto mb-0 mb-lg-3">
-            <div class="features-icons-icon d-flex">
-              <i class="icon-check m-auto text-success"></i>
+          <div class="col-lg">
+            <div class="features-item ">
+              <div class="features-item-icon d-flex">
+                <i class="icon-check m-auto text-success"></i>
+              </div>
+              <h3>Kualitas</h3>
+              <p class="lead mb-0">Kualitas Pelayanan terjamin</p>
             </div>
-            <h3>Kualitas</h3>
-            <p class="lead mb-0">Kualitas Pelayanan terjamin</p>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- Image Showcases -->
   <section class="showcase">
     <div class="container-fluid p-0">
-      <div class="row no-gutters">
+      <div class="row">
 
-        <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/Anggota.png');"></div>
+        <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/sejarahjpg.jpg');">
+        </div>
         <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-          <h2>Fully Responsive Design</h2>
-          <p class="lead mb-0">When you use a theme created by Start Bootstrap, you know that the theme will look great on any device, whether it's a phone, tablet, or desktop the page will behave responsively!</p>
+          <h2>Sejarah Koperasi</h2>
+          <p class="lead mb-0">When you use a theme created by Start Bootstrap, you know that the theme will look great
+            on any device, whether it's a phone, tablet, or desktop the page will behave responsively!</p>
         </div>
       </div>
-      <div class="row no-gutters">
+      <div class="row ">
         <div class="col-lg-6 text-white showcase-img" style="background-image: url('img/bg-showcase-2.jpg');"></div>
         <div class="col-lg-6 my-auto showcase-text">
           <h2>Updated For Bootstrap 4</h2>
-          <p class="lead mb-0">Newly improved, and full of great utility classes, Bootstrap 4 is leading the way in mobile responsive web development! All of the themes on Start Bootstrap are now using Bootstrap 4!</p>
+          <p class="lead mb-0">Newly improved, and full of great utility classes, Bootstrap 4 is leading the way in
+            mobile responsive web development! All of the themes on Start Bootstrap are now using Bootstrap 4!</p>
         </div>
       </div>
-      <div class="row no-gutters">
-        <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/bg-showcase-3.jpg');"></div>
+      <div class="row ">
+        <div class="col-lg-6 order-lg-2 text-white showcase-img"
+          style="background-image: url('img/bg-showcase-3.jpg');"></div>
         <div class="col-lg-6 order-lg-1 my-auto showcase-text">
           <h2>Easy to Use &amp; Customize</h2>
-          <p class="lead mb-0">Landing Page is just HTML and CSS with a splash of SCSS for users who demand some deeper customization options. Out of the box, just add your content and images, and your new landing page will be ready to go!</p>
+          <p class="lead mb-0">Landing Page is just HTML and CSS with a splash of SCSS for users who demand some deeper
+            customization options. Out of the box, just add your content and images, and your new landing page will be
+            ready to go!</p>
         </div>
       </div>
     </div>
@@ -134,7 +150,8 @@
           <div class="testimonial-item mx-auto mb-5 mb-lg-0">
             <img class="img-fluid rounded-circle mb-3" src="img/testimonials-2.jpg" alt="">
             <h5>Fred S.</h5>
-            <p class="font-weight-light mb-0">"Bootstrap is amazing. I've been using it to create lots of super nice landing pages."</p>
+            <p class="font-weight-light mb-0">"Bootstrap is amazing. I've been using it to create lots of super nice
+              landing pages."</p>
           </div>
         </div>
         <div class="col-lg-4">
