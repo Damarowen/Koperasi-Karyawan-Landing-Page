@@ -6,8 +6,16 @@
 
 body {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: aliceblue;
+
 }
 
+
+
+a:hover {
+    text-decoration: none;
+    background-color: transparent;
+}
 
 /**NAVBAR**/
 
@@ -17,13 +25,13 @@ body {
 
 .navbar-dark .navbar-nav .nav-link {
   color: white;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
 
 .navbar {
   padding: 10px;
-  background-color: rgba(131, 125, 125, 0.2)
+  background-color: rgba(131, 125, 125, 0.4)
 }
 
 
@@ -45,14 +53,13 @@ header.masthead::after {
   display: block;
   position: absolute;
   height: 100vh;
-  width: 98.6vw;
+  width: 100%;
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.22452731092436973) 0%, rgba(0, 0, 0, 0));
 }
 
 header.masthead h1 {
-  font-size: 2rem;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-  font-weight: 100;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+
 }
 
 header.masthead h1 span {
@@ -60,12 +67,25 @@ header.masthead h1 span {
 }
 
 
+.blockquote > p {
+  text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+
+}
+
+
+.contact-head {
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+
+}
+
+
+
 /**FEATURES**/
 
 #info-panel {
   padding: 5px;
-  margin-top: -100px;
-  margin-bottom: 100px;
+  margin-top: -200px;
+  margin-bottom: 70px;
 }
 
 .features {
@@ -90,8 +110,17 @@ i {
 
 /* * SHOW CASE */
 
-.showcase {
+
+
+.showcase-title {
   margin-bottom: 20px;
+  padding: 25px;
+
+}
+
+.showcase-content {
+ margin: 20px 0;
+ padding: 50px;
 }
 
 .showcase-text {
@@ -107,9 +136,10 @@ i {
 /* * TESTIMONIAL ITEM * */
 
 #testimonial {
-margin: 3em 0 1em;
+margin: 3em 0 0;
 text-align: center;
-background-color: #ddd;
+background-color: white;
+padding: 20px;
 }
 
 .testimonial-item {
@@ -128,7 +158,7 @@ background-color: #ddd;
 #contact {
   padding-top: 5em;
   padding-bottom: 5em;
-  margin: 20px 0;
+ 
   background: linear-gradient(90deg, rgba(230, 242, 24, 1) 2%, rgba(119, 200, 8, 0.9925012241224614) 23%, rgba(8, 200, 97, 0.9925012241224614) 79%);
 }
 
@@ -140,6 +170,25 @@ background-color: #ddd;
   display: flex;
 }
 
+
+/* * footer * */
+
+.footer {
+  background-color: aliceblue;
+  padding: 20px;
+}
+
+
+.social > .list-inline > .list-inline-item > a > i {
+margin: 10px;
+font-size: 3em;
+}
+
+.footer-link {
+  color: #28a745!important;
+}
+
+
 /* *Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
   .showcase-title {
@@ -149,4 +198,19 @@ background-color: #ddd;
   .form-contact {
     display: contents;
   }
+
+  .showcase-text {
+    padding: 20px;
+   }
+   
+   .footer {
+    padding: 20px 10px;
+  }
+
+  .social > .list-inline > .list-inline-item > a > i {
+display: grid;
+place-items: center;
+padding-top: 20px;
+    }
+  
 }
