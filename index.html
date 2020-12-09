@@ -8,19 +8,29 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Landing Page - Start Bootstrap Theme</title>
+  <title>Koperasi Karyawan Jamsostek</title>
 
-  <!-- Bootstrap core CSS -->
+  <!-- * Bootstrap core CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-  <!-- Custom fonts for this template -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+  <!-- * simple icon -->
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.css"
     integrity="sha512-9Tu/Gu0+bXW+oGrTGJOeNz2RG4MaF52FznXCciXFrXehFTLF6phJnJFNVOU2mmj9FWIXk9ap0H1ocygu1ZTRqg=="
     crossorigin="anonymous" />
-  <!-- Custom styles for this template -->
+
+
+  <!-- * font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+
+  <!-- * Custom styles for this template -->
   <link href="css/landing-page.css" rel="stylesheet">
+  <script src="https://balkangraph.com/js/latest/OrgChart.js"></script>
+
+
 
 </head>
 
@@ -159,6 +169,73 @@
   </section>
 
 
+  <!-- * ORG CHART -->
+
+  <section class="bagan">
+    <div class="container">
+      <h1 class="text-center display-4"> Struktur Organisasi</h1>
+      <div class="row">
+        <div class="col-lg">
+          <div id="orgchart">
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+
+  <!-- * PRODUCT 3 CARD * -->
+
+  <section class="product">
+    <div class="container">
+      <div class="row">
+        <div  class="col-lg card-container">
+          <div>
+            <div class="card">
+              <div class="card-body text-success">
+                <h5 class="card-title">Pinjaman Uang Tunai</h5>
+                <i class="fas fa-money-bill-wave"></i>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg card-container">
+          <div>
+            <div class="card">
+              <div  class="card-body text-success">
+                <h5 class="card-title">Kredit Bangunan dan Kendaraan</h5>
+                <i class="fas fa-car"></i>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg card-container">
+          <div>
+            <div class="card">
+              <div  class="card-body text-success">
+                <h5 class="card-title">Pinjaman Haji & Umroh</h5>
+                <i class="fas fa-mosque"></i>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+
+
   <!-- * TESTI * -->
 
 
@@ -224,48 +301,79 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-lg-9 col-5 ">
-          <ul class="list-inline">
+    
+        <div class="col-lg-5 col-12">
+          <div class="text-success alamat">
+              <p class=" ">Gedung Kantor Pusat BPJS Ketenagakerjan <br> Jalan Gatot Subroto No.79 Jakarta.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-12">
+          <ul class="list-inline icon">
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="icon-social-twitter text-success"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="icon-social-instagram text-success"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="icon-social-facebook text-success"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class=" col-lg-4 col-12 menu">
+          <ul class="list-inline ">
             <li class="list-inline-item"> <a href="" class="footer-link"> About</a></li>
             <li class="list-inline-item">.</li>
-            <li class="list-inline-item"> <a href="" class="footer-link">Terms Of Use</a> </li>
-            <li class="list-inline-item">.</li>
-            <li class="list-inline-item">  <a href="" class="footer-link">Privacy</a></li>
+            <li class="list-inline-item"> <a href="" class="footer-link">Telp ( 021 - 77317281 )</a></li>
           </ul>
           <p class="text-muted small ">© Damarowen 2020. All Rights Reserved.</p>
-        </div>
-        <div class="col-lg-3 col-7">
-          <div class="text-center social">
-            <ul class="list-inline">
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="icon-social-twitter text-success"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="icon-social-instagram text-success"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="icon-social-facebook text-success"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-          
-
-
         </div>
       </div>
     </div>
 
+
   </section>
 
-  <!-- Bootstrap core JavaScript -->
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
 
+
+
+  <script>
+    
+    const chart = new OrgChart(document.getElementById("orgchart"), {
+      mouseScrool: OrgChart.action.none,
+        nodeBinding: {
+            field_0: "name",
+            field_1: "title",
+            img_0: "img"
+        },
+        nodes: [
+                { id: 1, name: "Amber McKenzie", title: "Ketua", img: "https://cdn.balkan.app/shared/empty-img-none.svg" },
+                { id: 2, pid: 1, ppid: 9, name: "Edi Maedi", title: "Wakil Ketua I", img: "https://cdn.balkan.app/shared/empty-img-none.svg"},
+                { id: 3, pid: 1, name: "Siska Fransiska", title: "Wakil Ketua II", img: "https://cdn.balkan.app/shared/empty-img-none.svg" },
+                { id: 4, pid: 2, name: "Agung Aji", title: "Seksi Simp dan Pinjam", img: "https://cdn.balkan.app/shared/empty-img-none.svg" },
+                { id: 5, pid: 2, name: "Lina Melinda", title: "Bendahara", img: "https://cdn.balkan.app/shared/empty-img-none.svg" },
+                { id: 6, pid: 3, name: "Bagus Rahmad", title: "Sekretaris", img: "https://cdn.balkan.app/shared/empty-img-none.svg" },
+                { id: 7, pid: 3, name: "Andika", title: "Seksi Usaha", img: "https://cdn.balkan.app/shared/empty-img-none.svg" },
+                {id: 8, pid: 1, name: "Leo", title: "Pengawas II", img: "https://cdn.balkan.app/shared/empty-img-none.svg", tags: ['partner']},
+                {id: 9, pid: 1, name: "Fenita", title: "Pengawas I", img: "https://cdn.balkan.app/shared/empty-img-none.svg", tags: ['partner']},
+
+            ]
+    });
+
+   
+</script>
 
 </body>
+
 
 </html>
