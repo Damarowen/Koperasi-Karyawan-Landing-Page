@@ -30,7 +30,9 @@
   <link href="css/landing-page.css" rel="stylesheet">
   <script src="https://balkangraph.com/js/latest/OrgChart.js"></script>
 
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
 </head>
 
@@ -124,7 +126,7 @@
       <div class="row showcase no-gutters">
         <div class="col-lg-6 showcase-content">
           <h1 class="display-4 showcase-title"> Sejarah Kopkar Jamsostek</h1>
-          <p class="text-justify lead  showcase-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum
+          <p class="text-justify lead showcase-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum
             repellendus
             repudiandae excepturi
             reiciendis neque itaque nam, doloremque odio exercitationem! Aperiam commodi perferendis ipsa tenetur earum
@@ -242,32 +244,53 @@
   <section id="testimonial">
 
     <div class="container">
-      <h2>What People Say ..</h2>
-      <div class="row">
-        <div class="col-lg-4">
-          <div class="testimonial-item">
-            <img src="./img/testimonials-1.jpg" class="rounded-circle" alt="Responsive image">
-            <h5>Margaret E.</h5>
-            <p class="font-weight-light">"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium fugit
-              hic dolores, sed mollitia sit! "</p>
+     
+      <div id="demo" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+          
+        </ul>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="carousel-caption">
+              <h5>" Sebelum mengenal Kopkar Jamsostek saya orang miskin, tapi hidup saya berubah sejak kenal Pak Didin."</h5>
+              <p>- John Doe</p>
+            </div>   
+            <div class="carousel-img">
+              <img src="./img/testimonials-1.jpg" class="rounded-circle" alt="Responsive image">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-caption">
+              <h5>" Kopkar Jamsostek untuk kebaikan umat."</h5>
+              <p>- John Doe</p>
+            </div>  
+            <div class="carousel-img">
+              <img src="./img/testimonials-2.jpg" class="rounded-circle" alt="Responsive image">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-caption">
+              <h5>" Kopkar Jamsostek telah membuat saya kaya, anda harus mencobanya "</h5>
+              <p>- John Doe</p>
+            </div> 
+            <div class="carousel-img">
+              <img src="./img/testimonials-3.jpg" class="rounded-circle" alt="Responsive image">
+            </div>
           </div>
         </div>
-        <div class="col-lg-4">
-          <div class="testimonial-item">
-            <img src="./img/testimonials-2.jpg" class="rounded-circle" alt="Responsive image">
-            <h5>Margaret E.</h5>
-            <p class="font-weight-light">"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, veniam. "
-            </p>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="testimonial-item">
-            <img src="./img/testimonials-3.jpg" class="rounded-circle" alt="Responsive image">
-            <h5>Margaret E.</h5>
-            <p class="font-weight-light">"Lorem ipsum dolor sit amet consectetur adipisicing elit. "</p>
-          </div>
-        </div>
+        <a class="carousel-control-prev" href="#demo" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#demo" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
+
     </div>
 
   </section>

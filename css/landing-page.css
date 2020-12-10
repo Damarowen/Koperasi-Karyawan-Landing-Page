@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  background-color: aliceblue;
+  background: #ffffff;
 
 }
 
@@ -111,16 +111,14 @@ i {
 /* * SHOW CASE */
 
 
-
 .showcase-title {
-margin: 0 10px;
+  margin: 0 10px;
   padding: 10px;
 
 }
 
 .showcase-content {
-  margin: 10px 0;
-  /* padding: 30px; */
+  padding: 20px;
 }
 
 .showcase-text {
@@ -133,6 +131,8 @@ margin: 0 10px;
 
 .img-fluid {
   border-radius: 5px;
+  min-height: 50vh;
+
 }
 
 /* * BAGAN* */
@@ -140,7 +140,6 @@ margin: 0 10px;
 
 
 .bagan {
-  background-color: aliceblue;
   margin: 3em auto;
 }
 
@@ -150,8 +149,8 @@ margin: 0 10px;
   position: relative;
 }
 
-#orgchart > svg {
-  background-color: white;
+#orgchart>svg {
+  background-color: whitesmoke;
 }
 
 rect {
@@ -180,7 +179,7 @@ rect {
 }
 
 .card-container:hover {
- min-width: 30em;
+  min-width: 30em;
 }
 
 .card-body {
@@ -188,7 +187,7 @@ rect {
 }
 
 .card-title {
-  font-size: 1.8em;
+  font-size: 2em;
   min-height: 10vh;
   padding: 0;
   margin: 1.5em 0 1em;
@@ -207,14 +206,65 @@ rect {
 
 /* * TESTIMONIAL ITEM * */
 
+.carousel {
+  background-color: whitesmoke;
+  padding-bottom: 2em;
+}
+
+.carousel-item{
+  height: 40vh;
+}
+
+.carousel-indicators li{
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+background-color: black;}
+
+.carousel-img {
+  margin-top: 160px;
+}
+
+.carousel-img > img{
+  max-height: 15vh;
+}
+
+.carousel-caption{
+  color: black;
+  top: 5%;
+}
+
+.carousel-caption > h5{
+  line-height: 1.4;
+}
+
+.carousel-caption > p{
+  font-style: italic;
+}
+
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 50px;
+  color: black;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 50px;
+  color: black;
+}
+
+
 #testimonial {
-  /* margin: 3em 0 0; */
+
   text-align: center;
   background-color: white;
   padding: 20px;
 }
 
-.testimonial-item {
+/* .testimonial-item {
   margin-top: 20px;
 }
 
@@ -222,7 +272,7 @@ rect {
   max-width: 12em;
   box-shadow: 0 5px 5px 0 #adb5bd;
   margin: 10px;
-}
+}  */
 
 
 /* * FORM CONTACT * */
@@ -263,12 +313,12 @@ rect {
   text-align: right;
 }
 
-.icon > .list-inline-item>a>i {
+.icon>.list-inline-item>a>i {
   margin: 5px;
   font-size: 3em;
 }
 
-.icon > .list-inline-item>a>i:hover {
+.icon>.list-inline-item>a>i:hover {
 
   font-size: 4em;
 }
@@ -293,44 +343,54 @@ rect {
   }
 
   .card-title {
-    min-height: fit-content;
+    min-height: 1vh;
   }
 
   .card-body {
-    padding: 2em 4em;
+    margin: 10px;
+
+  }
+
+  .carousel {
+    padding-bottom: 5em;
+  }
+
+  .carousel-img {
+    margin-top: 190px;
   }
 
   .footer {
     padding: 20px 10px;
   }
 
-.social>.list-inline>.list-inline-item>a>i {
+  .social>.list-inline>.list-inline-item>a>i {
     display: grid;
     place-items: center;
     padding-top: 20px;
-  } 
-  
-.footer .menu {
-  text-align: center;
+  }
+
+  .footer .menu {
+    text-align: center;
+  }
+
+  .alamat {
+    text-align: center;
+  }
+
+  .footer {
+    padding-top: 5px;
+    text-align: center;
+  }
+
+  #info-panel {
+    margin-top: -120px;
+  }
+
 }
 
-.alamat {
-  text-align: center;
-}
 
-.footer {
-  padding-top: 5px;
-  text-align: center;
-}
-
-#info-panel {
-  margin-top: -120px;
-}
-
-}
-
- /* *Medium devices (tablets, 768px and up) */
-@media (min-width: 578px) and (max-width: 991.98px) { 
+/* *Medium devices (tablets, 768px and up) */
+@media (min-width: 578px) and (max-width: 991.98px) {
 
   .alamat {
     text-align: center;
@@ -340,16 +400,40 @@ rect {
     text-align: center;
   }
 
-  #info-panel{
-padding: 30px;
+  #info-panel {
+    padding: 30px;
   }
 
   .img-fluid {
-    max-height: 80vh;
+    max-width: 80vw;
   }
 
-  .showcase-image{
-    background-color: yellowgreen;
+
+  .card-title {
+    font-size: 2.4em;
+    min-height: 1vh;
+    padding: 10px;
+    margin-top: 5px;
+
+  }
+
+  .card-body>i {
+    font-size: 6em;
+  }
+
+  .card-body {
+    margin: 30px;
+
+  }
+
+}
+
+/* * width desktop */
+
+@media (min-width: 1600px) {
+
+  .showcase-content {
+    margin-top: 6em;
   }
 
 
