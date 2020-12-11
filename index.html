@@ -39,23 +39,25 @@
 <body>
 
   <!-- *NAV* -->
-  <nav class="navbar navbar-expand-lg navbar-dark">
-    <div class="container">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container ">
       <a class="navbar-brand" href="#">Kopkar Jamsostek</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBar"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse">
+      <div class="collapse navbar-collapse" id="navBar">
         <div class="navbar-nav ml-auto">
-          <a class="nav-item nav-link" href="#">Tentang Kami <span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" href="#">Produk</a>
-          <a class="nav-item nav-link" href="#">Hubungi Kami</a>
+          <a class="nav-item nav-link" href="#showcase">Tentang Kami <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="#product">Produk</a>
+          <a class="nav-item nav-link" href="#contact">Hubungi Kami</a>
         </div>
 
       </div>
     </div>
   </nav>
+
+
 
   <!-- * MASTERHEAD * -->
   <header class="masthead text-white">
@@ -173,9 +175,9 @@
 
   <!-- * ORG CHART -->
 
-  <section class="bagan">
+  <section id="bagan">
     <div class="container">
-      <h1 class="text-center display-4"> Struktur Organisasi</h1>
+      <h1 class="bagan-title"> Struktur Organisasi</h1>
       <div class="row">
         <div class="col-lg">
           <div id="orgchart">
@@ -188,7 +190,7 @@
 
   <!-- * PRODUCT 3 CARD * -->
 
-  <section class="product">
+  <section id="product">
     <div class="container">
       <div class="row">
         <div  class="col-lg card-container">
@@ -301,10 +303,10 @@
     <div class="container">
       <div class="row">
         <div class="col-12 mt-4">
-          <h2 class="mb-2 text-center contact-head">Ready to get started? Sign up now!</h2>
+          <h2 class="mb-2 text-center contact-head">Daftar sekarang untuk menjadi Anggota </h2>
         </div>
       </div>
-      <div class="row head">
+      <div class="row input-contact">
         <div class="col-12 col-lg-10 mb-2">
           <form action="" class="form-contact">
             <input type="email" class="form form-control form-control-lg" placeholder="Type your email..">
@@ -321,7 +323,7 @@
   </section>
 
 
-  <section class="footer">
+  <section id="footer">
 
     <div class="container">
       <div class="row">
@@ -373,7 +375,9 @@
 
   <script>
     
-    const chart = new OrgChart(document.getElementById("orgchart"), {
+
+    //chart
+const chart = new OrgChart(document.getElementById("orgchart"), {
       mouseScrool: OrgChart.action.none,
         nodeBinding: {
             field_0: "name",
@@ -394,7 +398,19 @@
             ]
     });
 
-   
+
+
+// jquery scroll navbar
+$(document).ready(function() {
+  $(window).scroll(function() {
+    if ($(document).scrollTop() > 30) {
+      $(".navbar").addClass("scroll");
+    } else {
+      $(".navbar").removeClass("scroll");
+    }
+  });
+});
+
 </script>
 
 </body>
