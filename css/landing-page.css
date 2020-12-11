@@ -317,6 +317,24 @@ background-color: black;}
 }
 
 
+@media (max-width: 400px) {
+
+
+  .carousel-item{
+    height: 45vh;
+  }
+
+  .carousel-img {
+    margin-top: 220px !important;
+  }
+
+  .carousel-indicators li{
+    display: none ;}
+
+}
+
+
+
 /* *Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
 
@@ -335,12 +353,15 @@ background-color: black;}
   }
 
   .carousel-img {
-    margin-top: 190px;
+    margin-top: 200px;
   }
 
   .alamat {
     text-align: center;
   }
+
+  .carousel-indicators li{
+    display: none ;}
 
 }
 
