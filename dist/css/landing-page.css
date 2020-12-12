@@ -1,4 +1,3 @@
-
 html {
   scroll-behavior: smooth;
 
@@ -143,7 +142,7 @@ i {
   margin: 3em auto;
 }
 
-.bagan-title{
+.bagan-title {
   text-align: center;
   font-size: 3.5em;
   margin: 1em 0;
@@ -174,13 +173,13 @@ rect {
 
 .card-container {
   padding: 2em 1em;
-    text-align: center;
+  text-align: center;
 }
 
 .card {
   box-shadow: 0 5px 5px 0 #adb5bd;
   border-radius: 5px;
-    min-height: 50vh;
+  min-height: 50vh;
 }
 
 .card-container:hover {
@@ -214,7 +213,7 @@ rect {
 
 
 #testimonial {
- margin: 10px;
+  margin: 10px;
 }
 
 .carousel {
@@ -222,41 +221,41 @@ rect {
   padding-bottom: 2em;
 }
 
-.carousel-item{
+.carousel-item {
   height: 40vh;
 }
 
-.carousel-indicators li{
+.carousel-indicators li {
   border-radius: 50%;
   height: 15px;
   width: 15px;
-background-color: black;}
+  background-color: black;
+}
 
 .carousel-img {
   text-align: center;
   margin-top: 160px;
 }
 
-.carousel-img > img{
+.carousel-img>img {
   max-height: 15vh;
 }
 
-.carousel-caption{
+.carousel-caption {
   color: black;
   top: 5%;
 }
 
-.carousel-caption > h5{
+.carousel-caption>h5 {
   line-height: 1.4;
 }
 
-.carousel-caption > p{
+.carousel-caption>p {
   font-style: italic;
 }
 
 
-.carousel-control-next-icon:after
-{
+.carousel-control-next-icon:after {
   content: '>';
   font-size: 50px;
   color: black;
@@ -317,10 +316,12 @@ background-color: black;}
 }
 
 
+/* * very Small devices (landscape phones, 400px ) */
+
 @media (max-width: 400px) {
 
 
-  .carousel-item{
+  .carousel-item {
     height: 45vh;
   }
 
@@ -328,8 +329,14 @@ background-color: black;}
     margin-top: 220px !important;
   }
 
-  .carousel-indicators li{
-    display: none ;}
+  .carousel-indicators li {
+    display: none;
+  }
+
+  .card-container:hover {
+    width: inherit;
+  }
+
 
 }
 
@@ -360,8 +367,9 @@ background-color: black;}
     text-align: center;
   }
 
-  .carousel-indicators li{
-    display: none ;}
+  .carousel-indicators li {
+    display: none;
+  }
 
 }
 
