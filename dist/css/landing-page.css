@@ -333,9 +333,6 @@ rect {
     display: none;
   }
 
-  .card-container:hover {
-    min-width: inherit;
-  }
 
 
 }
@@ -369,6 +366,10 @@ rect {
 
   .carousel-indicators li {
     display: none;
+  }
+
+  .card-container:hover {
+    min-width: inherit;
   }
 
 }
