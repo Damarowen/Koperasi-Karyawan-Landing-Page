@@ -334,7 +334,7 @@ rect {
   }
 
   .card-container:hover {
-    min-width: 30em;
+    width: inherit;
   }
 
 
