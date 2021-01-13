@@ -3,5 +3,5 @@ this project for my company website, my company is Koperasi Karyawan Jamsostek, 
 
 ## Images
 
-![Minion](https://octodex.github.com/images/minion.png)
+![Kopkar-1](https://res.cloudinary.com/damarowen/image/upload/v1610530272/kopkar-1_eexvcy.png)
 ![Stormtroopocat](https://octodex.github.com/images/stormtroopocat.jpg "The Stormtroopocat")
